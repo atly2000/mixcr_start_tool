@@ -28,7 +28,7 @@ echo ""
 
 PS3="What information do you want to add?: "
 
-select opt in make_folders sample_names fastq_dir out_dir b_dir ready_to_go quit; do
+select opt in make_folders sample_names fastq_dir out_dir b_dir fastq_format ready_to_go quit; do
 
   case $opt in
     make_folders)
@@ -83,6 +83,18 @@ select opt in make_folders sample_names fastq_dir out_dir b_dir ready_to_go quit
       echo "$n1" > input/b_dir.txt
       ;;
     
+    fastq_format)
+      read -p "What is the R1 fastq file suffix? (ex: _1.fastq.gz or _R1.fastq.gz or _1.fastq or _R1.fastq):  " n1
+      echo "Okay, I recorded your R1 fastq suffix in input/style_R1.txt"
+      echo "$n1" > input/style_R1.txt
+      read -p "What is the R2 fastq file suffix? (ex: _2.fastq.gz or _R2.fastq.gz or _2.fastq or _R2.fastq):  " n2
+      echo "Okay, I recorded your R2 fastq suffix in input/style_R1.txt"
+      echo "$n2" > input/style_R2.txt
+      ;;
+    
+    
+    
+    
     ready_to_go)
       echo "You finished all the other steps? I'm going to prepare all your data for MIXCR to read now."
         module load python
@@ -93,13 +105,16 @@ select opt in make_folders sample_names fastq_dir out_dir b_dir ready_to_go quit
           NEW_FASTQ=$(<input/fastq_dir.txt)
           NEW_OUT=$(<input/out_dir.txt)
           NEW_B=$(<input/b_dir.txt)
-          
+          NEW_STYLE_R1=$(<input/style_R1.txt)
+          NEW_STYLE_R2=$(<input/style_R2.txt)
           
           #Making MIXCR Analyze Scripts
           cp templates/01_TEMPLATE_mixcr_analyze_script_maker.py prep_scripts/01_mixcr_analyze_script_maker.py
           sed -i "s|PATIENT_LIST|$NEW_PATIENT|g" prep_scripts/01_mixcr_analyze_script_maker.py
           sed -i "s|FASTQ_LIST|$NEW_FASTQ|g" prep_scripts/01_mixcr_analyze_script_maker.py
           sed -i "s|OUT_LIST|$NEW_OUT|g" prep_scripts/01_mixcr_analyze_script_maker.py
+          sed -i "s|STYLE_R1|$NEW_STYLE_R1|g" prep_scripts/01_mixcr_analyze_script_maker.py
+          sed -i "s|STYLE_R2|$NEW_STYLE_R2|g" prep_scripts/01_mixcr_analyze_script_maker.py
           python prep_scripts/01_mixcr_analyze_script_maker.py > run_scripts/01_mixcr_run.swarm
           
           #Making MIXCR Export Scripts
@@ -107,6 +122,8 @@ select opt in make_folders sample_names fastq_dir out_dir b_dir ready_to_go quit
           sed -i "s|PATIENT_LIST|$NEW_PATIENT|g" prep_scripts/02_mixcr_script_maker.py
           sed -i "s|B_LIST|$NEW_B|g" prep_scripts/02_mixcr_script_maker.py
           sed -i "s|OUT_LIST|$NEW_OUT|g" prep_scripts/02_mixcr_script_maker.py
+          sed -i "s|STYLE_R1|$NEW_STYLE_R1|g" prep_scripts/02_mixcr_script_maker.py
+          sed -i "s|STYLE_R2|$NEW_STYLE_R2|g" prep_scripts/02_mixcr_script_maker.py
           python prep_scripts/02_mixcr_script_maker.py > run_scripts/02_mixcr_export.sh
       echo "Okay, I just finished prepping your data. You are ready to submit the job to Biowulf as the next step!"
       ;;
