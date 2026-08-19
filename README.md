@@ -6,9 +6,10 @@ Currently, this version of the tool is compatible with IGH, IGK, and IGL retriev
 Please download the Manual DOCX file and read it for guidance and tips.
 
 
-Please cite Ann Ly, University of Oxford/National Institutes of Health if you use my tool.
+***Please cite Ann Ly, University of Oxford/National Institutes of Health if you use my tool.***
+
 Ly, Ann. MIXCR Start Tool, 2026, https://github.com/atly2000/mixcr_start_tool/. 
 
 
-MIXCR Was developed by:
+***MIXCR Was developed by:***
 Dmitriy A. Bolotin, Stanislav Poslavsky, Igor Mitrophanov, Mikhail Shugay, Ilgar Z. Mamedov, Ekaterina V. Putintseva, and Dmitriy M. Chudakov. "MiXCR: software for comprehensive adaptive immunity profiling." Nature methods 12, no. 5 (2015): 380-381.
