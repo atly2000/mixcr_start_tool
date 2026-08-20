@@ -13,7 +13,7 @@ echo "--------------------------------------------------------------------------
 echo "Hi! This is Ann Ly. I'm a MD/PhD student in Adrian Wiestner's lab."
 echo "I can help you prepare for your MIXCR run. When I ask you for some info, just paste it."
 echo "If you don't have all this info, we can't run MIXCR." 
-echo "Make sure you have you have all the information we need to make MIXCR work."
+echo "Make sure you have all the information we need to make MIXCR work."
 echo "-------------------------------------------------------------------------------------------"
 echo " Menu Navigation Tips"
 echo ""
