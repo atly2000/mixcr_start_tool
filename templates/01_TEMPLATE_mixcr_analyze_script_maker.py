@@ -11,8 +11,8 @@ out_dir = 'OUT_LIST'
 
 print("#SWARM --sbatch='--export=FASTQ_DIR="+fastq_dir+",OUT_DIR="+out_dir+"'")
 for i in range(len(list_original)): 
- print("mixcr analyze rna-seq \\")
- print("--species hsa \\")
+ print("mixcr analyze SAY_PRESET \\")
+ print("--species SAY_SPECIES \\")
  print("${FASTQ_DIR}/"+list_original[i]+"STYLE_R1 \\")
  print("${FASTQ_DIR}/"+list_original[i]+"STYLE_R2 \\")
  print("${OUT_DIR}/"+list_original[i]+" \\")
