@@ -21,11 +21,9 @@ Dmitriy A. Bolotin, Stanislav Poslavsky, Igor Mitrophanov, Mikhail Shugay, Ilgar
 
 Ann Ly
 
-8/17/26 - created
-
 Last updated 8/20/26
-
-Please view this document using “Web Layout” in Microsoft Word.
+This contains some of the information in the **Manual, which is downloadable.**
+Please view that document using “Web Layout” in Microsoft Word.
 
 **Table of Contents**
 
