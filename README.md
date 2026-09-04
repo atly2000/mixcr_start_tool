@@ -34,24 +34,25 @@ Get a MIXCR License
 Create Input Files and Specify your Directories
 Option 1: Minimal Coding Method
 ▶️1. Run the MIXCR Start Tool
-1. Make_Folders
-2. Sample_Names
-3. Fastq_dir
-4. Out_dir
-5. B_dir
-6. Specify FASTQ Format
-7. Experiment Info
-8. Ready to Go
+	1. Make_Folders
+	2. Sample_Names
+	3. Fastq_dir
+	4. Out_dir
+	5. B_dir
+	6. Specify FASTQ Format
+	7. Experiment Info
+	8. Ready to Go
 ▶️2. Verify that all files are there using “tree”
 ▶️3. Run the Commands specific to MIXCR
-1. Run MIXCR
-2. Run MIXCR Export
+	1. Run MIXCR
+	2. Run MIXCR Export
 ▶️4. MIXCR is Done! Your outputs will be at out_dir and b_dir that you specified.
 ▶️5. Optional: Place the data in a readable way
-1. Add helper files and folders
-2. Merge IGH, IGK, and IGL into the same table
+	1. Add helper files and folders
+	2. Merge IGH, IGK, and IGL into the same table
 ⚠️Troubleshooting Missing Files
 Results Interpretation
+
 
 
 
