@@ -27,57 +27,32 @@ Please view that document using “Web Layout” in Microsoft Word.
 
 **Table of Contents**
 
-[Overview](#_kn7e8u1w0u7y)
+Overview
+Background Biology
+Preparing for Analysis
+Get a MIXCR License
+Create Input Files and Specify your Directories
+Option 1: Minimal Coding Method
+▶️1. Run the MIXCR Start Tool
+1. Make_Folders
+2. Sample_Names
+3. Fastq_dir
+4. Out_dir
+5. B_dir
+6. Specify FASTQ Format
+7. Experiment Info
+8. Ready to Go
+▶️2. Verify that all files are there using “tree”
+▶️3. Run the Commands specific to MIXCR
+1. Run MIXCR
+2. Run MIXCR Export
+▶️4. MIXCR is Done! Your outputs will be at out_dir and b_dir that you specified.
+▶️5. Optional: Place the data in a readable way
+1. Add helper files and folders
+2. Merge IGH, IGK, and IGL into the same table
+⚠️Troubleshooting Missing Files
+Results Interpretation
 
-[Background Biology](#_iczb5rfh7u5y)
-
-[Preparing for Analysis](#_fsatggq2m7wj)
-
-[Get a MIXCR License](#_lwr053e5fehx)
-
-[Create Input Files and Specify your Directories](#_14wjje93xwhc)
-
-[Option 1: Minimal Coding Method](#_qiznsv5rh96i)
-
-[▶️1. Run the MIXCR Start Tool](#_qnuutq6mbs0n)
-
-[1\. Make_Folders](#_6y81qke6pu67)
-
-[2\. Sample_Names](#_z5c96xyizbd)
-
-[3\. Fastq_dir](#_khs6mbpljm3y)
-
-[4\. Out_dir](#_34n2cplf0spo)
-
-[5\. B_dir](#_v1ptrommmy6x)
-
-[6\. Specify FASTQ Format](#_3occ7lb5w5hw)
-
-[7\. Experiment Info](#_6a31bzneelr3)
-
-[8\. Ready to Go](#_cv90k6rmim7u)
-
-[▶️2. Verify that all files are there using “tree”](#_ckf67r7jprd7)
-
-[▶️3. Run the Commands specific to MIXCR](#_ffkqt8uwkca)
-
-[1\. Run MIXCR](#_jqa8uck61i4d)
-
-[2\. Run MIXCR Export](#_y0hjmyrmdjao)
-
-[▶️4. MIXCR is Done! Your outputs will be at out_dir and b_dir that you specified.](#_s1bufupr0gpr)
-
-[▶️5. Optional: Place the data in a readable way](#_6ddw0ti35qqq)
-
-[1\. Add helper files and folders](#_mslqn02m2ozd)
-
-[2\. Merge IGH, IGK, and IGL into the same table](#_taapogd1a310)
-
-[⚠️Troubleshooting Missing Files](#_5gto5sm7ad53)
-
-[Results Interpretation](#_uwaxak1mh2bx)
-
-[\___](#_ox3hqb1rn177)
 
 
 
