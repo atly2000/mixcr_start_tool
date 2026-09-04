@@ -79,29 +79,7 @@ Please view that document using “Web Layout” in Microsoft Word.
 
 [\___](#_ox3hqb1rn177)
 
-[Option 2: Pure Coding Method for the Start Tool](#_jn1zrwl9w33e)
 
-[▶️1. Initialize Script](#_rfeqghor3fnb)
-
-[1\. Run Initialize Script](#_y0sv4m42es0h)
-
-[2\. Edits the Template Scripts](#_olpf0ch4a72s)
-
-[01\. Template for MIXCR Analyze](#_lg5w0mgcikow)
-
-[02\. Template for MIXCR Export](#_bzstajld2ynt)
-
-[▶️2. Run the Commands](#_7n4jsmtr4ea5)
-
-[▶️3. MIXCR is Done! Your outputs will be at out_dir and b_dir that you specified.](#_559f1xiyljtr)
-
-[\___](#_p3z96indak7b)
-
-[Other Useful Information](#_la5jmv66vh98)
-
-[Key MIXCR Commands](#_fq0dt4nr915f)
-
-[Core Parts of my MIXCR Start Tool](#_9tghgvurtg6v)
 
 # Overview
 
