@@ -211,11 +211,7 @@ They should be this style of quotation (""), not this style (“”). This (“�
 
 ## ▶️1. Run the MIXCR Start Tool
 
-**Download the MIXCR Start Tool that Ann Ly created from**
-
-L:\\Lab-Wiestner\\Ann_Ly\\004_special_tools\\mixcr_start_tool
-
-Alternatively, you can get it from my Github. This is the faster way.
+**Download the MIXCR Start Tool that Ann Ly created**
 
 **Downloads the MIXCR Start Tool (by Ann Ly) to your Biowulf space.**
 
